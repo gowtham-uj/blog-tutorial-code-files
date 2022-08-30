@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial -scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>socket io chat</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="text-center text-5xl mt-5 mb-5">Socket Io Chat</h1>
+      <section class="chat-box-cont container w-full">
+        <h1 class="user-name-h1 w-11/12 text-2xl pl-12">
+          User Name : <span class="user-name-span"></span>
+        </h1>
+        <section class="chat-box-wrapper h-5/6 flex justify-center mb-5 mt-5">
+          <section class="h-full w-9/12 chat-box"></section>
+        </section>
+        <div class="flex justify-center mt-5 mb-3">
+          <div class="mb-3 w-11/12">
+            <div
+              class="input-group relative flex flex-wrap items-stretch w-full mb-4 justify-center"
+            >
+              <input
+                type="search"
+                class="form-control relative flex-auto w-full block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                placeholder="Send New Message"
+                id="send-msg-input"
+                aria-label="new-msg"
+              />
+              <button
+                class="btn inline-block px-6 py-2.5 bg-blue-600 text-white font-la text-lg leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex items-center mt-3 mb-3"
+                type="button"
+                id="send-msg-btn"
+              >
+                Send Msg
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-5 mb-3">
+          <div class="mb-3 w-11/12">
+            <div
+              class="input-group relative flex flex-wrap items-stretch w-full mb-4 justify-center"
+            >
+              <input
+                type="search"
+                class="form-control relative flex-auto w-full block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                placeholder="grp name here"
+                id="join-new-grp-input"
+                aria-label="new-msg"
+              />
+              <button
+                class="btn inline-block px-6 py-2.5 bg-blue-600 text-white font-la text-lg leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex items-center mt-3 mb-3"
+                type="button"
+                id="join-new-grp-btn"
+              >
+                Join New Group
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="./main.js" defer type="module"></script>
+  </body>
+</html>
