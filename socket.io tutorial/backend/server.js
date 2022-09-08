@@ -43,3 +43,5 @@ io.on("connection", (socket) => {
     socket.to(payload.grpName).emit("joinedNewGrp", payload);
   });
 });
+
+server.listen(3000);
